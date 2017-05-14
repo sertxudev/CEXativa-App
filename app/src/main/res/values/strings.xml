@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CEXàtiva</string>
+    <string name="action_settings">Ajustes</string>
+    <string name="title_activity_ajustes">Ajustes</string>
+    <string name="recibir_notificaciones">Recibir Notificaciones</string>
+    <string name="notificaciones">Notificaciones</string>
+</resources>

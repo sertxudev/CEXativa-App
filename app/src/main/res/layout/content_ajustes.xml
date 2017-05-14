@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_ajustes"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ga.sertxu.www.cexativa.Ajustes"
+    tools:showIn="@layout/activity_ajustes">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_notifications_black_24dp"
+            android:id="@+id/imageView"
+            android:layout_marginTop="5dp"
+            tools:ignore="ContentDescription"
+            android:layout_weight="1"
+            android:cropToPadding="false"
+            android:adjustViewBounds="false" />
+
+        <TextView
+            android:text="@string/notificaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textView"
+            android:textSize="24sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#afafaf"
+        android:id="@+id/line"
+        android:layout_below="@+id/linearLayout"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/line"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Switch
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/switch1"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            android:textOn="I"
+            android:textOff="o"
+            android:text="@string/recibir_notificaciones"
+            android:showText="false" />
+
+    </LinearLayout>
+
+</RelativeLayout>
